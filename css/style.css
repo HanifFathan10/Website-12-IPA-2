@@ -5,13 +5,32 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #222222;
 }
+/* HERO SECTION */
+.hiro {
+  margin-top: 30px;
+}
+
+
+
+
+/* ABOUT SECTION */
+.tentang {
+  margin-top: 30px;
+}
+
+/* WALI KELAS SECTION */
+.walikelas {
+  margin-top: 100px;
+}
+
+/* ABSENSI SECTION */
 .slider {
   margin-bottom: 20px;
   position: relative;
 }
 .slider .owl-item.center .slider-card {
-  transform: scale(1.15);
-  opacity: 1;
+  transform: scale(1);
+  opacity: 100%;
   background: #eaeaea;
   background: -webkit-linear-gradient(to bottom, #222222, #eaeaea);
   background: linear-gradient(to bottom, #222222, #eaeaea);
@@ -28,7 +47,8 @@ body {
   transition: all 0.3s;
 }
 .slider-card img {
-  border-radius: 10px 0px 10px 0px;
+  border-radius: 10px 10px 10px 10px;
+  width: 80%;
 }
 .owl-nav .owl-prev {
   position: absolute;
@@ -62,8 +82,7 @@ body {
   background: #eaeaea !important;
 }
 
-@media and (max-width:720px) {
-    .slider-card img{
-        border-radius: 15px;
-    }
-}
+/* MOMENT SECTION */
+
+
+/* MEDIA QUERIES */
