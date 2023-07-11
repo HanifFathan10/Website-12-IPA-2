@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
@@ -17,5 +18,13 @@ $(document).ready(function () {
         items: 3,
       },
     },
+  });
+});
+
+$(document).ready(function() {
+  $('.row').masonry({
+    itemSelector: '.gallery-item',
+    columnWidth: '.gallery-item',
+    percentPosition: true
   });
 });
