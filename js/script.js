@@ -1,4 +1,11 @@
+// ketika LI navbar diklik maka activenya berubah
+$('.nav-link').on('click', function () {
+  $('.nav-link').removeClass('active');
+  $(this).addClass('active');
 
+})
+
+// carousel agar bisa digeser
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
@@ -21,6 +28,7 @@ $(document).ready(function () {
   });
 });
 
+// untuk bagian moment
 $(document).ready(function() {
   $('.row').masonry({
     itemSelector: '.gallery-item',

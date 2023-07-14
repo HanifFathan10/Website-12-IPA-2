@@ -17,29 +17,29 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
   </head>
-  <body>
+  <body id="home">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-transparent navbar-dark bg-dark shadow p-3 rounded">
-      <div class="container fs-6">
-        <a class="navbar-brand" href="#"><h5>12 IPA 2</h5></a>
+    <nav class="navbar fixed-top sticky-md-bottom navbar-expand-md navbar-dark bg-dark shadow p-3 rounded">
+      <div class="container fs-6 navigation">
+        <a class="navbar-brand d-inline-flex focus-ring py-1 px-2 text-decoration-none" href="#"><h5>12 IPA 2</h5></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto gap-4">
-            <li class="nav-item">
+        <div class="navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-4 nav-ul">
+            <li class="nav-item nav-li">
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-li">
               <a class="nav-link" href="#about">Tentang</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-li">
               <a class="nav-link" href="#walikelas">Wali Kelas ❤️</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-li">
               <a class="nav-link" href="#absensi">Absensi</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-li">
               <a class="nav-link" href="#moment">Moment</a>
             </li>
           </ul>
@@ -51,9 +51,9 @@
     <!-- HERO SECTION -->
     <section class="hiro">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-lg-6">
-            <img src="img/1.png" class="img-fluid" alt="12 ipa 2" width="1280px" />
+        <div class="row align-items-center mt-5">
+          <div class="col-12 col-md-6">
+            <img src="img/1.png" class="img-fluid" alt="12 ipa 2" />
           </div>
           <div class="text-white col-12 col-lg-6 align-items-center text-sm-start">
             <h5 class="fw-semibold">Hi, It's</h5>
@@ -73,8 +73,8 @@
     <!-- HERO SECTION END -->
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="pt-5" style="background-color: #527b92">
-      <div class="container-fluid position-relative">
+    <section id="about" class="section-click" style="background-color: #527b92">
+      <div class="container-fluid">
         <div class="row align-items-center tentang">
           <div class="col-12">
             <div class="text-center">
@@ -96,15 +96,14 @@
         <path
           fill="#222222"
           fill-opacity="1"
-          d="M0,288L34.3,256C68.6,224,137,160,206,165.3C274.3,171,343,245,411,240C480,235,549,149,617,101.3C685.7,53,754,43,823,74.7C891.4,107,960,181,1029,192C1097.1,203,1166,149,1234,149.3C1302.9,149,1371,203,1406,229.3L1440,256L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-        ></path>
+          d="M0,288L34.3,256C68.6,224,137,160,206,165.3C274.3,171,343,245,411,240C480,235,549,149,617,101.3C685.7,53,754,43,823,74.7C891.4,107,960,181,1029,192C1097.1,203,1166,149,1234,149.3C1302.9,149,1371,203,1406,229.3L1440,256L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
       </svg>
     </section>
     <!-- ABOUT SECTION END -->
 
     <!-- WALIKELAS SECTION -->
-    <section class="walikelas">
-      <div id="walikelas" class="container">
+    <section id="walikelas" class="pt-5">
+      <div class="container">
         <div class="row">
           <div class="col-12">
             <div class="text-center">
@@ -133,7 +132,7 @@
     <!-- WALIKELAS SECTION END -->
 
     <!-- ABSENSI SECTION -->
-    <section id="absensi" class="pt-5" style="background-color: #527b92;">
+    <section id="absensi" class="section-click" style="background-color: #527b92;">
       <div class="container">
         <h1 class="text-center text-white"><b>ABSENSI</b></h1>
         <div class="slider">
@@ -496,7 +495,7 @@
     <!-- ABSENSI SECTION END -->
 
     <!-- MOMENT SECTION -->
-    <section id="moment">
+    <section id="moment" class="section-click">
       <div class="container gallery-container mt-5 p-3">
         <h1 class="text-white text-center">MOMENT</h1>
         
@@ -568,6 +567,29 @@
       </div>
     </section>
     <!-- MOMENT SECTION END -->
+    <hr class="border border-light border-1 opacity-80">
+    <!-- FOOTER SECTION -->
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-center align-items-center gap-5 mb-4 p-2 pb-2 overflow-hidden">
+              <a href="#home" class="footer-link text-center text-white text-decoration-none">Home</a>
+              <a href="#about" class="footer-link text-center text-white text-decoration-none">Tentang</a>
+              <a href="#walikelas" class="footer-link text-center text-white text-decoration-none">Wali Kelas ❤️</a>
+              <a href="#absensi" class="footer-link text-center text-white text-decoration-none">Absensi</a>
+              <a href="#moment" class="footer-link text-center text-white text-decoration-none">Moment</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center justify-content-md-center">
+            <p class="paragraf-size">Dibuat dengan sepenuh hati💞</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER SECTION -->
 
     <!-- Feather Icons -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
