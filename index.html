@@ -19,13 +19,15 @@
   </head>
   <body id="home">
     <!-- NAVBAR -->
-    <nav class="navbar fixed-top sticky-md-bottom navbar-expand-md navbar-dark bg-dark shadow p-3 rounded">
+    <nav class="navbar fixed-top sticky-md-bottom navbar-expand-lg navbar-dark bg-dark shadow p-3 rounded">
       <div class="container fs-6 navigation">
         <a class="navbar-brand d-inline-flex focus-ring py-1 px-2 text-decoration-none" href="#"><h5>12 IPA 2</h5></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
         </button>
-        <div class="navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto gap-4 nav-ul">
             <li class="nav-item nav-li">
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
@@ -56,9 +58,9 @@
             <img src="img/1.png" class="img-fluid" alt="12 ipa 2" />
           </div>
           <div class="text-white col-12 col-lg-6 align-items-center text-sm-start">
-            <h5 class="fw-semibold">Hi, It's</h5>
-            <h1 class="fw-bolder">12 IPA 2</h1>
-            <p class="lh-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis praesentium eum amet voluptatibus ratione modi?</p>
+            <h6 class="fw-semibold"><span style="color: #527b92">Hi</span>, It's</h5>
+            <h1 class="fw-bolder" style="color: #527b92">12 IPA 2</h1>
+            <p class="lh-sm fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis praesentium eum amet voluptatibus ratione modi?</p>
           </div>
         </div>
       </div>
@@ -74,23 +76,23 @@
 
     <!-- ABOUT SECTION -->
     <section id="about" class="section-click" style="background-color: #527b92">
-      <div class="container-fluid">
-        <div class="row align-items-center tentang">
+      <div class="container">
+        <div class="row align-items-center">
           <div class="col-12">
             <div class="text-center">
               <h2 class="text-white fw-semibold" style="font-family: inherit">TENTANG KAMI</h2>
             </div>
           </div>
-          <div class="col-5">
-            <img src="img/3.png" alt="ipa 2" width="480px" class="img-fluid rounded float-start mb-5" />
-          </div>
-          <div class="col-7">
-            <div class="align-items-center pt-2">
-              <p class="text-white text-sm-start lh-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur excepturi labore quam velit atque inventore.</p>
-            </div>
-          </div>
-          <div class="mb-5"></div>
         </div>
+        <div class="row mt-3">
+          <div class="col-12 col-md-6 justify-content-center">
+            <img src="img/16.jpg" alt="ipa 2" width="480px" class="img-fluid align-items-center mb-5 rounded" />
+          </div>
+          <div class="col-12 col-md-6 align-items-center">
+            <p class="fs-6" style="font-family: 'Poppins', sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, facere ducimus. Nemo sed consectetur, eum accusantium, libero veniam molestias pariatur corporis necessitatibus similique consequuntur iure minima? Autem iure neque quod.</p>
+          </div>
+        </div>
+        <div class="mb-5"></div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -110,9 +112,12 @@
               <h2 class="text-white fw-semibold mb-5 mt-5" style="font-family: inherit">WALI KELAS❤️</h2>
             </div>
           </div>
-          <div class="col-7 position-relative">
-            <div class="padding">
-              <p class="text-white text-sm-start lh-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis cupiditate nesciunt sit assumenda temporibus, fuga nihil vitae! A, molestiae velit.</p>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-7">
+            <div class="">
+              <h5 class="text-white fst-italic" style="font-family: 'Poppins', sans-serif;">Nisa Fauziah S.pd</h3>
+              <p class="text-white font-arial fs-6">halo, ini walikelas kami di kelas 12 ipa 2</p>
             </div>
           </div>
           <div class="col-5">
@@ -497,10 +502,10 @@
     <!-- MOMENT SECTION -->
     <section id="moment" class="section-click">
       <div class="container gallery-container mt-5 p-3">
-        <h1 class="text-white text-center">MOMENT</h1>
+        <h1 class="text-white text-center" style="font-family: inherit" >MOMENT</h1>
         
         <div class="row inner-gallery">
-          <div class="col-6 col-lg-3 col-md-4 gallery-item">
+          <div class="col-6 col-lg-3 col-md-4 grid gallery-item">
             <img src="img/9.jpg" alt="Foto 1">
           </div>
           <div class="col-6 col-lg-3 col-md-4 gallery-item ">
@@ -571,31 +576,50 @@
     <!-- FOOTER SECTION -->
     <section>
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="d-flex justify-content-center align-items-center gap-5 mb-4 p-2 pb-2 overflow-hidden">
-              <a href="#home" class="footer-link text-center text-white text-decoration-none">Home</a>
-              <a href="#about" class="footer-link text-center text-white text-decoration-none">Tentang</a>
-              <a href="#walikelas" class="footer-link text-center text-white text-decoration-none">Wali Kelas ❤️</a>
-              <a href="#absensi" class="footer-link text-center text-white text-decoration-none">Absensi</a>
-              <a href="#moment" class="footer-link text-center text-white text-decoration-none">Moment</a>
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-2">
+            <div class="justify-content-center align-items-center text-center gap-5 mb-4 overflow-hidden">
+              <a href="#home" class="footer-link text-white  text-decoration-none">Home</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-2">
+            <div class="justify-content-center align-items-center text-center gap-5 mb-4 overflow-hidden">
+              <a href="#about" class="footer-link text-white align-items-center text-decoration-none">Tentang</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-2">
+            <div class="justify-content-center align-items-center text-center gap-5 mb-4 overflow-hidden">
+              <a href="#walikelas" class="footer-link text-white  text-decoration-none">Wali Kelas ❤️</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-2">
+            <div class="justify-content-center align-items-center text-center gap-5 mb-4 overflow-hidden">
+              <a href="#absensi" class="footer-link text-white text-decoration-none">Absensi</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-2">
+            <div class="justify-content-center align-items-center text-center gap-5 mb-4 overflow-hidden">
+              <a href="#moment" class="footer-link text-white  text-decoration-none">Moment</a>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-12 d-flex justify-content-center justify-content-md-center">
-            <p class="paragraf-size">Dibuat dengan sepenuh hati💞</p>
+            <p class="paragraf-size" style="color: #527b92">Dibuat dengan sepenuh hati💞</p>
           </div>
         </div>
       </div>
+      
+      
+      
     </section>
     <!-- FOOTER SECTION -->
 
-    <!-- Feather Icons -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script> 
     <script src="js/script.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <!-- Feather Icons -->
     <script>
       feather.replace()
     </script>
