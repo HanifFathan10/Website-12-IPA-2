@@ -1,19 +1,34 @@
 // ketika LI navbar diklik maka activenya berubah
-$('.nav-link').on('click', function () {
+$('.nav-link').on('click', ()=> {
   $('.nav-link').removeClass('active');
   $(this).addClass('active');
+})
 
+// validasi close diluar navbar
+const navToggler = document.querySelector(".navbar-toggler")
+const navbarNav = document.querySelector("#navbarNav")
+
+document.addEventListener("click", (e)=> {
+  if(!navToggler.contains(e.target) && !navbarNav.contains(e.target)) {
+    navToggler.classList.add("collapsed")
+    navbarNav.classList.remove("show")
+  }
+})
+
+// validasi ketika discroll maka navbar hilang
+document.addEventListener("scroll", (e)=> {
+  navToggler.classList.add("collapsed")
+  navbarNav.classList.remove("show")
 })
 
 // carousel agar bisa digeser
-$(document).ready(function () {
+$(document).ready( ()=> {
   $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
     autoplayHoverPause: true,
     center: true,
-    navText: ["<i class='fa-light fa-angle-left'></i>", "<i class='fa-light fa-angle-right'></i>"],
     responsive: {
       0: {
         items: 1,

@@ -7,7 +7,7 @@ html {
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background: #222222;
+  background: #0f0e17;
 }
 /* NAVBAR */
 .navbar-toggler {
@@ -58,21 +58,20 @@ body {
 .navbar-toggler.collapsed .toggler-icon {
   background-color: #eaeaea
 }
-
-
-
-
-
-
-
 /* HERO SECTION */
 .hiro {
-  margin-top: 30px;
+  margin-top: 130px;
+}
+.size-p {
+  font-size: 12px;
 }
 
 /* ABOUT SECTION */
 .section-click {
   padding-top: 100px;
+}
+.size-p-a {
+  font-size: 10px;
 }
 /* WALI KELAS SECTION */
 .padding {
@@ -191,3 +190,6 @@ body {
   color: #eaeaea;
   font-style: italic;
 }
+
+/* MEDIA QUERIES */
+
